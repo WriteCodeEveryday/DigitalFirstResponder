@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.challenge.dfr.ui.home.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_create"
+            app:destination="@id/navigation_create" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_quick_reference"
+            app:destination="@id/navigation_quick_reference" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_scan"
+            app:destination="@id/navigation_scan" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_saved"
+            app:destination="@id/navigation_saved" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_create"
+        android:name="com.challenge.dfr.ui.create.CreateFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_create_case" >
+        <action
+            android:id="@+id/action_navigation_create_to_navigation_case_landing"
+            app:destination="@id/navigation_case_landing" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_case_landing"
+        android:name="com.challenge.dfr.ui.case_landing.CaseLandingFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_case_landing" >
+        <action
+            android:id="@+id/action_navigation_case_landing_to_navigation_create"
+            app:destination="@id/navigation_create" />
+        <action
+            android:id="@+id/action_navigation_case_landing_to_navigation_case_evidence"
+            app:destination="@id/navigation_case_evidence" />
+        <action
+            android:id="@+id/action_navigation_case_landing_to_navigation_case_evidence_options"
+            app:destination="@id/navigation_case_evidence_options" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_case_evidence"
+        android:name="com.challenge.dfr.ui.case_evidence.CaseEvidenceListFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_case_evidence" >
+        <action
+            android:id="@+id/action_navigation_case_evidence_to_navigation_case_landing"
+            app:destination="@id/navigation_case_landing" />
+        <action
+            android:id="@+id/action_navigation_case_evidence_to_navigation_case_evidence_preview"
+            app:destination="@id/navigation_case_evidence_preview" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_case_evidence_options"
+        android:name="com.challenge.dfr.ui.case_evidence.CaseEvidenceAddFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_case_evidence_options" >
+        <action
+            android:id="@+id/action_navigation_case_evidence_options_to_navigation_case_evidence"
+            app:destination="@id/navigation_case_evidence" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_case_evidence_preview"
+        android:name="com.challenge.dfr.ui.case_evidence.CaseEvidencePreviewFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_case_evidence_preview" >
+        <action
+            android:id="@+id/action_navigation_case_evidence_preview_to_navigation_printer_settings"
+            app:destination="@id/navigation_printer_settings" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_printer_settings"
+        android:name="com.challenge.dfr.ui.printer.PrinterSettingsFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_printer_settings" >
+        <action
+            android:id="@+id/action_navigation_printer_settings_to_navigation_case_evidence_preview"
+            app:destination="@id/navigation_case_evidence_preview" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_scan"
+        android:name="com.challenge.dfr.ui.scan.ScanFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_scan_evidence" >
+        <action
+            android:id="@+id/action_navigation_scan_to_navigation_case_evidence_preview"
+            app:destination="@id/navigation_case_evidence_preview" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_quick_reference"
+        android:name="com.challenge.dfr.ui.quick_reference.QuickReferenceFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_quick_reference" />
+
+    <fragment
+    android:id="@+id/navigation_saved"
+    android:name="com.challenge.dfr.ui.saved.SavedFragment"
+    android:label="@string/app_name"
+    tools:layout="@layout/fragment_saved_cases" >
+        <action
+            android:id="@+id/action_navigation_saved_to_navigation_case_evidence"
+            app:destination="@id/navigation_case_evidence" />
+    </fragment>
+</navigation>

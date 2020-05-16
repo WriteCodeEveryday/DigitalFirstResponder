@@ -1,0 +1,2 @@
+rootProject.name='DFR'
+include ':app', ':lib-java-brsdk-common', ':lib-android-brsdk-scan', ':lib-android-brsdk-core', ':BrotherPrintLibrary'

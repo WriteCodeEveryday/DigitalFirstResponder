@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Digital First Responder</string>
+
+    <string name="welcome_text">Welcome to\nDigital First Responder</string>
+    <string name="timestamp_text">Timestamp:</string>
+    <string name="case_number_text">Case Number</string>
+    <string name="evidence_number_text">Evidence Number</string>
+    <string name="evidence_type_text">Evidence Type</string>
+    <string name="examiner_text">Examiner</string>
+    <string name="location_text">Location</string>
+    <string name="notes_text">Notes</string>
+    <string name="case_notes_text">Case Notes</string>
+    <string name="evidence_notes_text">Evidence Notes</string>
+    <string name="checksum_text">Checksum</string>
+    <string name="preview_text">Preview</string>
+    <string name="document_text">Click to preview document</string>
+    <string name="checksum_success_text">VALID</string>
+    <string name="checksum_failure_text">FAILED</string>
+    <string name="printer_settings_text">Printer Setup Settings</string>
+    <string name="printer_status_text">No Printer Connected\nDon\'t have the printer? Use USB.</string>
+    <string name="printer_label_option_text">Label Option</string>
+    <string name="printer_roll_option_text">Roll Option</string>
+    <string name="printer_cancel_text">Done</string>
+    <string name="no_roll_text">No Roll Selected</string>
+    <string name="tap_preview_to_print_text">Tap Preview to Print</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_create_case">Create Case File</string>
+    <string name="nav_update_case">Update Case File</string>
+    <string name="nav_edit_case">Edit Case Details</string>
+    <string name="nav_export_case">Export Case</string>
+
+    <string name="nav_initial_screen">Document Initial Screen</string>
+    <string name="nav_tool">Document Tool Output</string>
+    <string name="nav_add_hardware">Document Hardware</string>
+    <string name="nav_add_manual_extraction">Perform Manual Extraction</string>
+    <string name="nav_scan_text">Scan Documents</string>
+    <string name="nav_scan_id">Scan ID / Driver License</string>
+
+    <string name="nav_add_evidence">Add Evidence</string>
+    <string name="nav_view_evidence">View Evidence</string>
+    <string name="nav_scan_evidence">Scan Evidence Tag</string>
+    <string name="nav_quick_reference">Quick Reference</string>
+    <string name="nav_saved">Saved</string>
+
+    <string name="nav_import_picture">Import a Picture</string>
+    <string name="nav_camera">Take a Picture</string>
+    <string name="nav_import_text">Import a Text File</string>
+    <string name="nav_scanner">Scan File</string>
+    <string name="nav_done">Done</string>
+    <string name="nav_save">Save</string>
+    <string name="nav_print">Print Evidence Tag</string>
+    <string name="nav_print_settings">Printer Settings</string>
+</resources>

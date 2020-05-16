@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/home_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/logo_original" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/welcome_text"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24dp" />
+
+        <LinearLayout
+            android:id="@+id/home_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="24dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/create_case_button"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_margin="8dp"
+                android:background="@color/colorAccent"
+                android:capitalize="none"
+                android:drawableStart="@drawable/ic_add_black_24dp"
+                android:paddingLeft="20dp"
+                android:text="@string/nav_create_case"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/scan_evidence_button"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_margin="8dp"
+                android:background="@color/colorAccent"
+                android:capitalize="none"
+                android:drawableStart="@drawable/ic_camera_enhance_black_24dp"
+                android:paddingLeft="20dp"
+                android:text="@string/nav_scan_evidence"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/quick_reference_button"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_margin="8dp"
+                android:background="@color/colorAccent"
+                android:capitalize="none"
+                android:drawableStart="@drawable/ic_dashboard_black_24dp"
+                android:paddingLeft="20dp"
+                android:text="@string/nav_quick_reference"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
