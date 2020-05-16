@@ -15,5 +15,7 @@ This is a Native Android application targeting SDK version 19 or higher (Android
 ## Developer Setup
 
 A full gradle project is provided but there are dependencies that are not bundled.
+
 **Dependencies:** [Brother Print Library](https://developerprogram.brother-usa.com/sdk-download)
+
 **Dependencies:** [Brother Core Library + Brother Scan Library](https://developerprogram.brother-usa.com/sdk-download)
